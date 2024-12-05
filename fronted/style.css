@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,4 +9,41 @@ html,body{
     height: 100%;
     width: 100%;
     box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+    font-family: "Chivo", sans-serif;
+}
+#page1{
+    height: 100%;
+    width: 100%;
+}
+#page1 nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vmax;
+}
+#page1 nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 1vmax;
+    font-size: 1.8vmax;
+}
+#page1 .links{
+}
+#page1 .logo h1{
+    font-size: 2.8vmax;
+    font-family: "MuseoModerno", sans-serif;
+}
+
+.hero h2{
+    font-size: 4vmax;
+    text-align: center;
+    padding-top: 4vmax;
+}
+.hero .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vmax;
 }
