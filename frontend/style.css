@@ -39,7 +39,7 @@ html,body{
 .hero h2{
     font-size: 5vmax;
     text-align: center;
-    padding-top: 4vmax;
+    padding: 4vmax 0;
     font-weight: 900;
     letter-spacing: -2%;
 }
@@ -196,6 +196,7 @@ html,body{
 #page4 .connect h2{
     text-align: center;
     font-size: 5vmax;
+    padding: 1vmax 0;
 }
 #page4 .connect img{
     height: 70vh;
@@ -216,4 +217,22 @@ html,body{
     padding: 0.5vmax 1vmax;
     border-radius: 20px;
     border: 0.5px solid #fff;
+    cursor: pointer;
+}
+
+@media (max-width:700px) {
+    #projects{
+        gap: 2vmax;
+    }
+    .pEnd{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .pEnd p{
+        font-size: 1.5vmax;
+    }
+    .intro{
+        font-size: 2vmax;
+        padding: 0;
+    }
 }
