@@ -66,3 +66,36 @@ html,body{
 .end p{
     font-size: 1.2vmax;
 }
+
+/* PAGE 1 Ends */
+/* PAGE 2 Starts */
+#page2{
+    padding: 2vmax;
+}
+#projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    padding: 2.5vmax;
+    /* gap: 2vmax; */
+}
+.project{
+    padding: 2vmax 0vmax;
+    align-self: center;
+    justify-self: center;
+}
+.project img{
+    height: 18vmax;
+    width: 28vw;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.pEnd{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.pEnd p{
+    font-size: 1.5vmax;
+}
