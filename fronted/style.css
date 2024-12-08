@@ -21,29 +21,48 @@ html,body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vmax;
+    padding: 01vmax;
 }
 #page1 nav a{
     text-decoration: none;
     color: #fff;
     padding: 1vmax;
-    font-size: 1.8vmax;
+    font-size: 1.4vmax;
+    font-weight: 200;
 }
-#page1 .links{
-}
+
 #page1 .logo h1{
-    font-size: 2.8vmax;
+    font-size: 2.5vmax;
     font-family: "MuseoModerno", sans-serif;
 }
 
 .hero h2{
-    font-size: 4vmax;
+    font-size: 5vmax;
     text-align: center;
     padding-top: 4vmax;
+    font-weight: 900;
+    letter-spacing: -2%;
 }
-.hero .img{
+.hero img{
+    height: 65vh;
+    width: 90vw;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+.hero .end{
     display: flex;
+    padding: 4vmax 10vmax;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    height: 45vmax;
+}
+.end h3{
+    font-size: 3vmax;
+    font-weight: 900;
+    line-height: 3vmax;
+    letter-spacing: -1%;
+}
+.end p{
+    font-size: 1.2vmax;
 }
