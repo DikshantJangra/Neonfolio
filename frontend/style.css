@@ -34,22 +34,54 @@ html,body{
 #page1 .logo h1{
     font-size: 2.5vmax;
     font-family: "MuseoModerno", sans-serif;
+    animation: future 1.5s forwards;
 }
-
-.hero h2{
+#page1 .links{
+    animation: future 1.5s forwards;
+}
+.hero .future h2{
     font-size: 5vmax;
     text-align: center;
     padding: 4vmax 0;
     font-weight: 900;
     letter-spacing: -2%;
 }
-.hero img{
+.hero .future{
+    animation: future 1.5s forwards;
+    overflow: hidden;
+}
+@keyframes future{
+    0%{
+        display: none;
+        opacity: 0;
+    }
+    100%{
+        display: block;
+        opacity: 1;
+    }
+}
+.hero .heroImg{
+    overflow: hidden;
+}
+.hero .heroImg img{
     height: 65vh;
     width: 90vw;
     object-fit: cover;
     border-radius: 10px;
     display: block;
     margin: 0 auto;
+    animation: futureIMG 4.5s forwards;
+}
+@keyframes futureIMG{
+    0%{
+    transform: scale(7.1);
+    opacity: 0;
+    display: none;
+    }
+    100%{
+    display: block;
+    opacity: 1;
+    }
 }
 .hero .end{
     display: flex;
