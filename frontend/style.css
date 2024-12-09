@@ -80,9 +80,21 @@ html,body{
     /* gap: 2vmax; */
 }
 .project{
+    position: relative;
     padding: 2vmax 0vmax;
     align-self: center;
     justify-self: center;
+    opacity: 0.6;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.project .image-container{
+    overflow: hidden;
+    border-radius: 10px;
+}
+.project:hover{
+    opacity: 1;
+    cursor: pointer;
 }
 .project img{
     height: 18vmax;
@@ -90,8 +102,12 @@ html,body{
     border-radius: 10px;
     object-fit: cover;
     margin: 0 auto;
+    overflow: hidden;
+    transition: transform 10s ease;
 }
-
+.project img:hover{
+    transform: scale(2.1);
+}
 .pEnd{
     display: grid;
     grid-template-columns: 50% 50%;
