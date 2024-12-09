@@ -61,6 +61,7 @@ html,body{
     }
 }
 .hero .heroImg{
+    position: relative;
     overflow: hidden;
 }
 .hero .heroImg img{
@@ -72,6 +73,28 @@ html,body{
     margin: 0 auto;
     animation: futureIMG 4.5s forwards;
 }
+.scrollerImg{
+    position: absolute;
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    overflow: hidden;
+    display: none;
+    animation: moveDown 5s linear; /* Apply the animation */
+}
+.scrollerImg img{
+    border-radius: 0px;
+}
+
+@keyframes moveDown {
+    0% {
+        display: block;
+        top: -100%; /* Start above the container */
+    }
+    100% {
+        top: 100%; /* Move to the bottom of the container */
+    }
+}
+
 @keyframes futureIMG{
     0%{
     transform: scale(7.1);
