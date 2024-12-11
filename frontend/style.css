@@ -12,6 +12,7 @@ html,body{
     background-color: #000;
     color: #fff;
     font-family: "Chivo", sans-serif;
+    scroll-behavior: smooth;
 }
 #page1{
     height: 100%;
@@ -246,14 +247,31 @@ html,body{
     font-size: 5vmax;
     padding: 1vmax 0;
 }
-#page4 .connect img{
-    height: 70vh;
-    width: 90vw;
+#page4 .connect .img{
+    background: url(../assets/NeonBlurGradientBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 70vh; */
+    width: 80vw;
     object-fit: cover;
     border-radius: 20px;
     margin: 0 auto;
-}
+    padding: 1vmax;
+    overflow: hidden;
 
+}
+#page4 .connect .img a img{
+    border-radius: 20px;
+    margin: 0.7vmax;
+    height: 7vmax;
+    width: 7vmax;
+    transition: 0.5s;
+}
+#page4 .connect .img a :hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    filter: brightness(1.2) contrast(1.5); 
+}
 .footer{
     width: 90%;
     display: flex;
@@ -262,12 +280,18 @@ html,body{
 .footer button{
     background: #000;
     color: #fff;
-    padding: 0.5vmax 1vmax;
+    padding: 0.8vmax 1.1vmax;
     border-radius: 20px;
     border: 0.5px solid #fff;
     cursor: pointer;
+    font-size: 1vmax;
+    transition: 1s;
 }
-
+.footer button:hover{
+    background : linear-gradient(to right, #cc39ed, #2aadf9);
+    box-shadow: 2px 2px 2px #e89ef0;
+    color: #000;
+}
 @media (max-width:700px) {
     #projects{
         gap: 2vmax;
