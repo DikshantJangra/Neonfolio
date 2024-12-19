@@ -272,10 +272,19 @@ html,body{
     cursor: pointer;
     filter: brightness(1.2) contrast(1.5); 
 }
+/* Page 4 ends */
+
+
+
+/* Page 5 starts */
 .footer{
     width: 90%;
     display: flex;
     justify-content: space-between;
+}
+.footer p{
+    font-size: 1.9vmax;
+    opacity: 0.6;
 }
 .footer button{
     background: #000;
@@ -292,6 +301,9 @@ html,body{
     box-shadow: 2px 2px 2px #e89ef0;
     color: #000;
 }
+/* Page 5 ends */
+
+
 @media (max-width:700px) {
     #projects{
         gap: 2vmax;
@@ -299,12 +311,52 @@ html,body{
     .pEnd{
         display: grid;
         grid-template-columns: 100%;
+        gap: 4vmax;
+    }
+    #projects{
+        display: block;
+    }
+    .project img{
+        height: 28vmax;
+        width: 40vmax;
+    }
+    .project .pInfo{
+        text-align: center;
+        font-size: 2vmax;
+    }
+    .project .pInfo h5{
+        font-size: 2.2vmax;
+        padding: 0.5vmax 0;
     }
     .pEnd p{
         font-size: 1.5vmax;
+        text-align: center;
     }
     .intro{
         font-size: 2vmax;
         padding: 0;
+        margin-top: 8vmax;
+    }
+    .hid{
+        display: none;
+    }
+    .hero .end{
+        display: block;
+        /* width: 100%; */
+        padding: 4vmax;
+
+    }
+    .hero .end h3{
+        font-size: 4vmax;
+        padding-bottom: 2vmax;
+    }
+    .hero .end p{
+        font-size: 1.5vmax;
+    }
+    .footer{
+        padding: 2vmax;
+    }
+    .footer button{
+        font-size: 1.4vmax;
     }
 }
